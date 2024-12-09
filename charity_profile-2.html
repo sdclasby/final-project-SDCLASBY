@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub - Charity Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="charities.html">Charities</a>
+    </nav>
+    <header>
+        <h2 id="charity-name">Charity Organization</h2>
+        <p id="extra-details" style="display: none;">
+            This charity focuses on education and welfare.
+        </p>
+    </header>
+    <main>
+        <section>
+            <h3>About the Charity</h3>
+            <p>
+                Description of the charity goes here. Explain their mission, goals, and any notable accomplishments.
+            </p>
+        </section>
+
+        <!-- Volunteer Form Section -->
+        <section>
+            <h3>Volunteer with Us</h3>
+            <button id="volunteer-btn">Volunteer Now</button>
+            <div id="form-container" style="display: none;">
+                <form id="volunteer-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Eventbrite Data Section -->
+        <section>
+            <h3>Upcoming Charity Events</h3>
+            <button id="fetch-data-btn">Load Charity Events</button>
+            <div id="data-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 HelpHub. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="charity_profile.js"></script>
+</body>
+</html>
+
